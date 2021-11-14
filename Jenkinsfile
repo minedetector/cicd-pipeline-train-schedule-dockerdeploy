@@ -36,7 +36,7 @@ pipeline {
         }
         stage('DeployToProduction') {
             
-            en {
+            when {
                 branch 'master'
             }
             steps {
